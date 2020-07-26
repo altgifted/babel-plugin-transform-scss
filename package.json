@@ -1,0 +1,24 @@
+{
+  "name": "babel-plugin-transform-scss",
+  "version": "1.0.1",
+  "description": "Babel plugin for converting scss or sass imports to css and embedding them in the head of the document",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altgifted/babel-plugin-transform-scss.git"
+  },
+  "keywords": [
+    "transform",
+    "scss",
+    "sass",
+    "css",
+    "babel",
+    "plugin"
+  ],
+  "author": "Vitaliy Baum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/altgifted/babel-plugin-transform-scss/issues"
+  },
+  "homepage": "https://github.com/altgifted/babel-plugin-transform-scss#readme"
+}
