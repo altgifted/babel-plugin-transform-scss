@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/altgifted/babel-plugin-transform-scss/issues"
   },
-  "publishConfig": { "registry": "https://registry.npmjs.org/" }
+  "publishConfig": { "registry": "https://registry.npmjs.org/" },
   "homepage": "https://github.com/altgifted/babel-plugin-transform-scss#readme",
   "peerDependencies": {
     "path": "^0.12.7",
