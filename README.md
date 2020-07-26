@@ -33,3 +33,36 @@ export default Button
     }
 </style>
 ```
+
+if import contains more than one styles:
+
+```javascript
+import React from 'react'
+import 'style.scss'
+import 'style2.scss'
+
+const Button = () => {
+  return (
+    <div className="button">
+      <div className="nested-from-style2">Nested</div>
+    </div>
+  )
+}
+
+export default Button
+```
+imported styles will be replaced like this:
+
+```html
+<style data-scss-component="Button_style">
+    .button {
+      display: flex;
+      justify-content: space-around;
+    }
+</style>
+<style data-scss-component="Button_style2">
+    .nested-from-style2 {
+      display: grid;
+    }
+</style>
+```
