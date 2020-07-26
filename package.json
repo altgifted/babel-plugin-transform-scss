@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-scss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Babel plugin for converting scss or sass imports to css and embedding them in the head of the document",
   "main": "lib/index.js",
   "repository": {
