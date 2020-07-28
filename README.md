@@ -7,7 +7,7 @@ This plugin completely replaces the standard webpack sass-loader. This part of c
 ```javascript
 module: {
   rules: [
-    ...rules,
+    //rules
     {
       test: /\.s[ac]ss$/i,
       use: ['style-loader', 'css-loader', 'sass-loader']
@@ -24,10 +24,12 @@ Use it in your config file:
 
 ```json
 {
-  "presets": [...],
+  "presets": [
+    //presets  
+  ],
   "plugins": [
     "babel-plugin-transform-scss",
-    ...otherPlugins
+    //other plugins
   ]
 }
 ```
