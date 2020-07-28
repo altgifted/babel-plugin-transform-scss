@@ -2,7 +2,35 @@
 
 Babel plugin for converting scss or sass imports to css and embedding them in the head of the document
 
-This plugin can be used for replacement of `sass-loader`
+This plugin completely replaces the standard webpack sass-loader. This part of code can be removed:
+
+```javascript
+module: {
+  rules: [
+    ...rules,
+    {
+      test: /\.s[ac]ss$/i,
+      use: ['style-loader', 'css-loader', 'sass-loader']
+    }
+  ]
+}
+```
+
+### Installation
+
+`npm install babel-plugin-transform-scss` or `yarn add babel-plugin-transform-scss`
+
+Use it in your config file:
+
+```json
+{
+  "presets": [...],
+  "plugins": [
+    "babel-plugin-transform-scss",
+    ...otherPlugins
+  ]
+}
+```
 
 ### How it works
 
