@@ -33,7 +33,7 @@ Use it in your config file:
 
 ### How it works
 
-This plugin will convert all scss or sass imports to the standard `<style>` attribute. For example:
+This plugin looks for import of `sass` or `scss` files, when imports are found - imported files replaces with function which renders pure css to the head of the document.
 
 ```javascript
 import React from 'react'
@@ -50,7 +50,7 @@ const Button = () => {
 export default Button
 ```
 
-`import "style.scss"` will be transformed to css and will be added to the `head` of the `document`:
+`import "style.scss"` will be transpiled to css and will be rendered to the `head` of the `document`:
 
 ```html
 <style data-scss-component="Button_style">
@@ -63,6 +63,8 @@ export default Button
 
 if import contains more than one styles:
 
+
+##### Input
 ```javascript
 import React from 'react'
 import 'style.scss'
@@ -78,8 +80,7 @@ const Button = () => {
 
 export default Button
 ```
-imported styles will be replaced like this:
-
+##### Output
 ```html
 <style data-scss-component="Button_style">
     .button {
