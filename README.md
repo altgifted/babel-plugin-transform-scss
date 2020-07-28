@@ -24,12 +24,9 @@ Use it in your config file:
 
 ```json
 {
-  "presets": [
-    //presets  
-  ],
+  "presets": [],
   "plugins": [
-    "babel-plugin-transform-scss",
-    //other plugins
+    "babel-plugin-transform-scss"
   ]
 }
 ```

@@ -1,13 +1,16 @@
 {
   "name": "babel-plugin-transform-scss",
-  "version": "1.0.6",
-  "description": "Babel plugin for converting scss or sass imports to css and embedding them in the head of the document",
+  "version": "1.0.7",
+  "description": "Babel plugin for transpile scss or sass imports to css and embedding them in the head of the document",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/altgifted/babel-plugin-transform-scss.git"
   },
   "keywords": [
+    "webpack",
+    "sass-loader",
+    "transpile",
     "transform",
     "scss",
     "sass",
@@ -20,7 +23,9 @@
   "bugs": {
     "url": "https://github.com/altgifted/babel-plugin-transform-scss/issues"
   },
-  "publishConfig": { "registry": "https://registry.npmjs.org/" },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "homepage": "https://github.com/altgifted/babel-plugin-transform-scss#readme",
   "peerDependencies": {
     "path": "^0.12.7",
