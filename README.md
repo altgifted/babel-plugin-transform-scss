@@ -26,10 +26,12 @@ Use it in your config file:
 {
   "presets": [],
   "plugins": [
-    "babel-plugin-transform-scss"
+    ["babel-plugin-transform-scss", {"include": "node_modules"}]
   ]
 }
 ```
+
+options optional :)
 
 ### How it works
 
@@ -53,7 +55,7 @@ export default Button
 `import "style.scss"` will be transpiled to css and will be rendered to the `head` of the `document`:
 
 ```html
-<style data-scss-component="Button_style">
+<style data-scss-component="Button_style_123e4567-e89b-12d3-a456-426614174000">
     .button {
       display: flex;
       justify-content: space-around;
@@ -82,13 +84,13 @@ export default Button
 ```
 ##### Output
 ```html
-<style data-scss-component="Button_style">
+<style data-scss-component="Button_style_2cb3b893-c04b-4d58-98ac-1262408e7557">
     .button {
       display: flex;
       justify-content: space-around;
     }
 </style>
-<style data-scss-component="Button_style2">
+<style data-scss-component="Button_style2_c7eacc89-f7cb-4ee8-8b73-a585a11fa527">
     .nested-from-style2 {
       display: grid;
     }
