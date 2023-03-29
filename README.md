@@ -26,7 +26,7 @@ Use it in your config file:
 {
   "presets": [],
   "plugins": [
-    ["babel-plugin-transform-scss", {"include": "node_modules"}]
+    ["babel-plugin-transform-scss", {"include": ["node_modules"] }]
   ]
 }
 ```
