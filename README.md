@@ -18,7 +18,7 @@ module: {
 
 ### Installation
 
-`npm install babel-plugin-transform-scss` or `yarn add babel-plugin-transform-scss`
+`npm install --save-dev babel-plugin-transform-scss` or `yarn add -D babel-plugin-transform-scss`
 
 Use it in your config file:
 
